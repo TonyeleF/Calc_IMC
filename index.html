@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+  </head>
+  <body>
+    <main id="container">
+      <section id="img">
+        <img src="imagens/undraw_personal-trainer_bqkg.svg" alt="treino">
+      </section>
+
+      <section id="calculadora">
+        <form id="form">
+          <h1 id="titulo">Calculadora-IMC</h1>
+
+          <div class="input-box">
+            <label for="peso"> Peso em Kg </label>
+            <div class="input-field">
+              <img
+                width="64"
+                height="64"
+                id="ico"
+                src="https://img.icons8.com/ios-filled/64/FFFFFF/weight-kg.png"
+                alt="weight-kg"
+              >
+              <input type="number" name="peso" id="peso" required  placeholder="Exemplo: 90">
+              <span>Kg</span>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label for="altura"> Altura em metros </label>
+            <div class="input-field">
+              <img
+                width="64"
+                height="64"
+                id="ico"
+                src="https://img.icons8.com/external-wanicon-solid-wanicon/64/FFFFFF/external-height-health-checkup-wanicon-solid-wanicon.png"
+                alt="external-height-health-checkup-wanicon-solid-wanicon"
+              >
+              <input type="number" name="altura" id="altura" step="0.01"  placeholder="Exemplo: 1,90">
+              <span>m</span>
+            </div>
+          </div>
+
+          <button type="button" id="botao">Calcular</button>
+        </form>
+        <div id="info" class="hider">
+          <div id="resultado">
+            <div id="imc">
+              <span id="value"></span>
+              <span>Seu IMC <span id="resultado-imc"></span></span>
+            </div>
+            <div id="descricao">
+              <span></span>
+            </div>
+          </div>
+          <div id="mais-info">
+            <a href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal " target="_blank">Mais infomações sobre IMC</a>
+            <img
+              width="10"
+              height="10"
+              id="ancora"
+              src="https://img.icons8.com/material-rounded/10/228BE6/external-link.png"
+              alt="external-link"
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
